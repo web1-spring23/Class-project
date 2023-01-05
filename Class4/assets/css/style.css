@@ -1,0 +1,19 @@
+body {
+    width: 60%;
+    margin: auto;
+    font-family: sans-serif;
+    background-color: #FFF9F2;
+    color: #333651;
+}
+
+a {
+    color: #3D96B7;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav li {
+    list-style: none;
+}
