@@ -72,7 +72,7 @@ header {
 }
 
 header a {
-    color: var(--cream);
+  color: var(--cream);
 }
 
 .logo a {
@@ -183,6 +183,8 @@ footer p {
 #pet-gallery-container {
 
     background-color: var(--dark-blue);
+    margin: 0px;
+    padding: 50px 0px;
     
 }
 
@@ -192,8 +194,21 @@ footer p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: var(--cream);
 }
 
+#pet-gallery figure img {
+    max-width: 560px;
+}
+
+#pet-gallery button img {
+    width:140px;
+}
+
+#pet-gallery button {
+    background-color: transparent;
+    border: none;
+}
 
 #pet-gallery div:last-of-type {
     display: flex;
@@ -238,16 +253,19 @@ footer p {
 
 /*button*/
 
+
+
+.button-primary:hover {
+    outline: 3px solid var(--cream);
+    
+}
+
 .button-primary {
 
     background-color: var(--dark-blue);
     text-decoration: none;
     padding:  10px 14px;
     border-radius: 5px;
-}
-
-.button-primary:hover {
-    outline: 3px solid var(--cream);
     
 }
 
@@ -264,6 +282,9 @@ footer p {
     display: flex;
     width: fit-content;
     align-items: center;
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    background-color: transparent;
 }
 .button-secondary span {
     padding-right: 10px;
@@ -287,3 +308,4 @@ footer p {
 .pet h3 {
     margin: 10px 0px 3px 0px;
 }
+
