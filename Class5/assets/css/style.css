@@ -5,6 +5,7 @@
     --cream: #FFF9F2;
     --teal: #3D96B7;
     font-size: 10px;
+    
 }
 
 
@@ -27,6 +28,9 @@ menu {
 }
 
 /*general */
+button.right-arrow svg {
+    transform: rotate(180deg);
+};
 
 
 .rounded {
@@ -208,6 +212,7 @@ footer p {
 #pet-gallery button {
     background-color: transparent;
     border: none;
+    color: var(--cream);
 }
 
 #pet-gallery div:last-of-type {
@@ -245,17 +250,16 @@ footer p {
     color: var(--dark-blue);
 }
 
-#testimonials button.right-arrow svg {
-    transform: rotate(180deg);
-};
 
 
 
 /*button*/
 
+button {
+    cursor: pointer;
+}
 
-
-.button-primary:hover {
+.button-primary:hover{
     outline: 3px solid var(--cream);
     
 }
@@ -298,7 +302,7 @@ footer p {
  display: flex;
 }
 
-/*pet*/
+/*pet card*/
 
 .pet a {
     text-decoration: none;
@@ -307,5 +311,146 @@ footer p {
 
 .pet h3 {
     margin: 10px 0px 3px 0px;
+}
+
+
+/*tabs */
+
+.tabs {
+   
+    display: flex;
+    align-items: center;
+}
+
+.tabs button {
+    background-color: transparent;
+    font-family: 'Lexend', sans-serif;
+    font-size: 2.4rem;
+    border: none;
+    color: var(--teal);
+    padding:8px 40px;
+    border-bottom: 3px solid var(--teal);
+    cursor: pointer;
+   
+
+}
+
+.tabs .active-tab {
+    color: var(--dark-blue);
+    font-weight: 700;
+    border-bottom: 5px solid var(--dark-blue);
+}
+
+/* pet about */
+
+dt {
+    font-weight: 700;
+    margin: 8px 0px;
+    font-size: 2rem;
+}
+
+dd {
+    margin: 0px 0px 35px 0px;
+
+}
+
+dd ul  {
+    padding-left: 20px;
+}
+
+dd ul li {
+    padding-bottom: 15px;
+    max-width: 450px;
+    line-height: 150%;
+}
+
+/* forms */
+
+label, legend {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=tel], input[type=email] {
+background-color: transparent;
+border: 1px solid var(--dark-blue);
+height: 35px;
+width: 400px;
+border-radius: 5px;
+margin-bottom: 30px;
+font-family: 'Lexend', sans-serif;
+font-size: 1.8rem;
+font-weight: 400;
+color: var(--dark-blue);
+padding: 5px 10px 5px 10px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+fieldset label {
+    font-weight: 400;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    accent-color: var(--teal);
+    
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    
+}
+
+input[type=submit] {
+
+    background-color: var(--dark-blue);
+    font-family: 'Lexend', sans-serif;
+    color: var(--cream);
+    text-decoration: none;
+    padding:  15px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+input[type=submit]:hover {
+    outline: 3px solid var(--teal);
+   
+}
+
+legend {
+    margin-bottom: 15px;
+}
+
+select {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--dark-blue);
+    appearance: none;
+    background: url('../imgs/chevron-blue.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
+    width: 200px;
+   
+   
 }
 
