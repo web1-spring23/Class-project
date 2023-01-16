@@ -9,7 +9,11 @@
     <meta name="Description" content="" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/imgs/paws-icon.png" type="img/png" />
-
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+   
   </head>
   <body>
     <header>
@@ -23,17 +27,17 @@
               <span>Menu</span>
             </button>
           </div> 
-          <menu>
+          <menu class="hidden-mobile">
           <li>
             <button>Adopt</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/adopt/cats.html">Cats</a></li>
               <li><a href="/adopt/dogs.html">Dogs</a></li>
             </menu>
           </li>
           <li>
             <button>Foster</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/foster/cats.html">Cats</a></li>
               <li><a href="/foster/dogs.html">Dogs</a></li>
             </menu>
@@ -41,14 +45,14 @@
           <li><a href="/blog.html">Blog</a></li>
           <li>
             <button>About</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/about.html">About Us</a></li>
               <li><a href="/contact.html">Contact Us</a></li>
             </menu>
           </li>
           <li>
             <button>Get Involved</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/volunteer.html">Volunteer</a></li>
               <li><a href="/adopt.html">Adopt</a></li>
               <li><a href="/foster.html">Foster</a></li>
@@ -153,7 +157,7 @@
                 </svg>
                 </button>
               
-              <figure>
+              <figure class="active">
                 <blockquote>
                   “I started out as a foster for a beautiful blue heeler dog and we
                   fell in love! TCNJ Paws made the adoption process so simple and
@@ -163,19 +167,15 @@
               </figure>
               <figure class="hidden">
                 <blockquote>
-                  “I started out as a foster for a beautiful blue heeler dog and we
-                  fell in love! TCNJ Paws made the adoption process so simple and
-                  easy”
+                  "Volunteering at TCNJ Paws has allowed me to see so many great animals find great homes. It is so rewarding."
                 </blockquote>
-                <figcaption>-Rebecca</figcaption>
+                <figcaption>-Shaun</figcaption>
               </figure>
               <figure class="hidden">
                 <blockquote>
-                  “I started out as a foster for a beautiful blue heeler dog and we
-                  fell in love! TCNJ Paws made the adoption process so simple and
-                  easy”
+                  “I was lonely at TCNJ but when I found out I could foster adorable cats, everything changed!"
                 </blockquote>
-                <figcaption>-Rebecca</figcaption>
+                <figcaption>-Tony</figcaption>
               </figure>
               
               
@@ -185,7 +185,7 @@
                 </button>
             </div>
             <!-- Slider dots-->
-            <div>
+            <div id="slider-dots">
               <button class="active"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="6" cy="6" r="6" fill="currentColor"/>
                 </svg>
@@ -309,4 +309,5 @@
       <p>Copyright 2023 All Rights Reserved • Privacy Policy</p>
     </footer>
   </body>
+  <script src="assets/js/scripts.js"></script>
 </html>

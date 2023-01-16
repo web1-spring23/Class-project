@@ -10,7 +10,10 @@
       href="../assets/imgs/paws-icon.png"
       type="img/png"
     />
-  
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -24,17 +27,17 @@
               <span>Menu</span>
             </button>
           </div> 
-          <menu>
+          <menu class="hidden-mobile">
           <li>
             <button>Adopt</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/adopt/cats.html">Cats</a></li>
               <li><a href="/adopt/dogs.html">Dogs</a></li>
             </menu>
           </li>
           <li>
             <button>Foster</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/foster/cats.html">Cats</a></li>
               <li><a href="/foster/dogs.html">Dogs</a></li>
             </menu>
@@ -42,14 +45,14 @@
           <li><a href="/blog.html">Blog</a></li>
           <li>
             <button>About</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/about.html">About Us</a></li>
               <li><a href="/contact.html">Contact Us</a></li>
             </menu>
           </li>
           <li>
             <button>Get Involved</button>
-            <menu>
+            <menu class="hidden-mobile">
               <li><a href="/volunteer.html">Volunteer</a></li>
               <li><a href="/adopt.html">Adopt</a></li>
               <li><a href="/foster.html">Foster</a></li>
@@ -94,26 +97,26 @@
             </svg>
           </button>
           <div>
-            <figure>
+            <figure class="active">
               <img class="rounded" src="../assets/imgs/bailey04.png" />
               <figcaption>Cutest lil guy, he’s very playful.</figcaption>
             </figure>
             <figure class="hidden">
               <img class="rounded" src="../assets/imgs/bailey02.png" />
-              <figcaption>Cutest lil guy, he’s very playful.</figcaption>
+              <figcaption>Beautiful eyes</figcaption>
             </figure>
             <figure class="hidden">
               <img class="rounded" src="../assets/imgs/bailey03.png" />
-              <figcaption>Cutest lil guy, he’s very playful.</figcaption>
+              <figcaption>A big love bug</figcaption>
             </figure>
             <figure class="hidden">
               <img class="rounded" src="../assets/imgs/bailey01.png" />
-              <figcaption>Cutest lil guy, he’s very playful.</figcaption>
+              <figcaption>Warms up to strangers easily</figcaption>
             </figure>
           </div>
           <!--small images-->
-          <div>
-            <button>
+          <div id="gallery-thumbnails">
+            <button class="active">
               <img class="rounded" src="../assets/imgs/bailey04.png" />
             </button>
             <button>
@@ -151,11 +154,11 @@
         <!--start about/apply tabs-->
         <section>
           <div class="tabs">
-            <button class="active-tab">About</button>
-            <button>Apply</button>
+            <button id="about-button" class="active-tab">About</button>
+            <button id="apply-button">Apply</button>
           </div>
           <!--start about section-->
-          <section>
+          <section id="about">
             <h2>About Bailey</h2>
 
             <dl>
@@ -186,7 +189,7 @@
           </section>
           <!--end about section-->
           <!--start apply section-->
-          <section>
+          <section id="apply" class="hidden">
             <h2>Adoption Application</h2>
             <form>
               <label for="name">Name</label><br />
@@ -303,4 +306,5 @@
       <p>Copyright 2023 All Rights Reserved • Privacy Policy</p>
     </footer>
   </body>
+  <script src="../assets/js/scripts.js"></script>
 </html>
