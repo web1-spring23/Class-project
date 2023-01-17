@@ -1,19 +1,32 @@
+<!--doctype defines the document type, though I've really only seen it used for HTML and not other documents-->
 <!DOCTYPE html>
+<!--defines language. You know how your web browser will try to translate web pages sometimes? this is how it knows what language it is-->
 <html lang="en">
+  <!--data about the page for the computer to parse. not to be confused with the header tag-->
   <head>
+    <!-- title of the page which will also show up in search results-->
     <title>TCNJ Paws Homepage</title>
+    <!-- view port is important to set so that the page scales for different devices, but more work has to be done with css for it to look right-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="" />
+    <!--meta descriptions also show up in search results-->
+    <meta name="Description" content="The description goes here" />
+    <!--we need to close the head before we begin the body-->
   </head>
+  <!-- the body is where content that shows up on the page starts. the head content is not visible on the page-->
   <body>
+    <!-- header is different than head. it is a semantic tag that defines the structure of the page-->
     <header>
       <!-- start main navigation-->
       <nav>
+        <!-- menu is the semantic version of an unordered list meant for interactive items-->
         <menu>
+           <!--li stands for list item. we are nesting a link inside of the list item-->
           <li><a href="/">TCNJ Paws</a></li>
           <li>
+            <!--I am making this a button because when you click it, you are making something happen on the page instead of going to a new page-->
             <button>Adopt</button>
             <menu>
+             
               <li><a href="/adopt/cats.html">Cats</a></li>
               <li><a href="/adopt/dogs.html">Dogs</a></li>
             </menu>
@@ -47,9 +60,10 @@
       </nav>
       <!-- end main navigation-->
     </header>
+    <!--main is another semantic -->
     <main>
       <!--start main content-->
-      <section class="flex">
+      <section>
         <div>
           <h1>Your New Best Friend is Waiting for You</h1>
           <p>
@@ -209,7 +223,7 @@
             <li><a href="">All Posts</a></li>
             <li><a href="">Pet Care</a></li>
             <li><a href="">Adoption and Foster Tips</a></li>
-            <li><a href="">Adoption Stoires</a></li>
+            <li><a href="">Adoption Stories</a></li>
         </menu>
         <h3>About</h3>
         <menu>
